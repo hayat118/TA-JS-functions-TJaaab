@@ -1,7 +1,11 @@
 /*
 1. Create a function named `sayHello` that that accepts a parameter `name` and alert `Hello [name]!`.
 */
-
+function sayHello(){
+  let name= "hayat"
+  alert(`Hello ${name}`)
+}
+sayHello();
 /*
 2. Create a function named `getFullName` that accepts two parameter `firstName` and `lastName` and returns
 fullName.
@@ -10,7 +14,10 @@ Example:
   getFullName("John", "Snow"); // "John Snow"
   getFullName("Nelson", "Mandela"); // "Nelson Mandela"
 */
-
+function getFullName(firstName,lastName){
+  return `${firstName} ${lastName}`
+}
+getFullName("tarique","hayat")
 /*
 3. Create a function named `addTwoNumbers` that accepts two numbers i.e `firstNum` and `secondNum` and returns
 the sum of both numbers. If user passes any data other then numbers alert a message saying `Enter Valid Input`
@@ -20,7 +27,15 @@ addTwoNumbers(10, 22); // 32
 addTwoNumbers(20, 32); // 32
 addTwoNumbers(10, "100"); // Alert Enter Valid Input
 */
-
+function addTwoNumbers(firstNum,secondNum){
+  let num=Number;
+  if(num!==Number){
+    alert(`Enter valid input`)
+  }
+  return firstNum+secondNum;
+  
+}
+addTwoNumbers(12,23)
 /*
 4. Create a function named `calc` which accepts three parameter `numA`, `numB` and `operation`. Operation
 can only be one of these `add, sub, mul, div`. Based on the operator return the value. If the `numA` or `numB`
@@ -41,8 +56,22 @@ on if the year id leap year or not.
 isLeapYear(2000); // true
 isLeapYear(2001); // false
 */
-
+function isLeapYear(year){
+  if(year%4==0){
+  return `true`
+  }else
+  return `false`
+}
+isLeapYear();
 
 /*
 6. Create a function named `getFactorial` that accepts a number and return the factorial of the number.
 */
+function getFactorial(factorial){
+  // factorial=factorial*i;
+  let number=Number;
+  for(let i=1;i<=number; i=i+1);
+  factorial=factorial*i;
+  return factorial;
+}
+getFactorial();
