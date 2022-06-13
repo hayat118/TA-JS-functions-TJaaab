@@ -104,12 +104,11 @@ Twist is when user passes anything other than number, or string value you should
 */
 
 function sum(a,b) {
-  if(a=="Number" && b=="Number"){
-    let sum=a+b;
-    return sum;
-  }else if(a,b=="string" && b,a=="string" ){
-    let concat=a+b;
-    return concat;
+  if(typeof a=="number" && typeof b=="number"){
+    
+    return a+b;
+  }else if(typeof a=="string" && typeof b=="string" ){
+    return a+" " +b;
   }else 
     return (`Enter valid values`)
 }
