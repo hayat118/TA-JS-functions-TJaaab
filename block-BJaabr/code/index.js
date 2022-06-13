@@ -75,7 +75,7 @@ addOne(12);
 let returnValue=addOne(12);
 
 // - What is the typeof returnValue
-Number
+// Number
 
 /* 2. Subtract one
 
@@ -110,7 +110,7 @@ substractOne(number);
 let returnValue=substractOne(number);
 
 // - What is the typeof returnValue
-Number;
+// Number;
 
 /* 3. Add two numbers
 
@@ -120,24 +120,32 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-// let a=+prompt(`enter 1st number`);
-// let b=+prompt(`enter 2nd value`)
 function sum(a,b){
   return a+b;
 }
  sum(a,b);
 
 // - Write a Function Expression
+let sum=function(a,b){
+  return a+b;
+}
 
 // - Write an Arrow Function without curly brackets(if possible)
+let sum=(a,b) =>a+b;
 
 // - Write an Arrow Function with curly brackets
+let sum=(a,b) =>{
+  return a+b;
+}
 
 // - Execute the function
+sum(a,b);
 
 // - Execute the function and store the return value in a variable
+let add=sum(a,b);
 
 // - What is the typeof returnValue
+// "number"
 
 /* 4. Square of the given value
 
@@ -146,19 +154,34 @@ Write a function named `square` that accepts a number and returns the square of 
 Do the following with above problem.
 */
 
+
 // - Write a Function Declaration
+function square(n){
+  return n*n;
+}
+square();
 
 // - Write a Function Expression
+let square= function(n){
+  return n*n;
+}
 
 // - Write an Arrow Function without curly brackets(if possible)
+let square=(n) => n*n;
 
 // - Write an Arrow Function with curly brackets
+let square=(n) =>{
+  return n*n;
+}
 
 // - Execute the function
+square(n);
 
 // - Execute the function and store the return value in a variable
+let num=square(n);
 
 // - What is the typeof returnValue
+// "number"
 
 /* 5. Find isGreater
 
@@ -168,18 +191,41 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
+function isGreater (x,y){
+    if (x>y){
+       return true;
+         
+    }else 
+      return false;
+  
+}
+isGreater(x,y);
 
 // - Write a Function Expression
-
+let isGreater= function(x,y){
+    if (x>y){
+       return true;
+         
+    }else 
+      return false;
+}
+isGreater(x,y);
 // - Write an Arrow Function without curly brackets(if possible)
+let isGreater=(x,y) =>(x>y);
 
 // - Write an Arrow Function with curly brackets
+let isGreater=(x,y) =>{
+  return x>y;
+}
 
 // - Execute the function
+isGreater(x,y);
 
 // - Execute the function and store the return value in a variable
+let returnValue=isGreater(x,y)
 
 // - What is the typeof returnValue
+// "Boolean"
 
 /* 6.
 
@@ -192,17 +238,42 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
+function oddOrEven(n){
+  if(n%2==0){
+    return (`Number is even`)
+  }else 
+  return (`Number is odd`)
+}
+oddOrEven(n);
 
 // - Write an anonymous Function Expression
-
+let oddOrEven=function(n){
+   if(n%2==0){
+    return (`Number is even`)
+  }else 
+  return (`Number is odd`)
+}
+oddOrEven(n);
 // - Write an named Function Expression
 
 // - Write an Arrow Function without curly brackets (hint: use ternary operator)
+let oddOrEven=(n)=>{
+  if(n%2==0){
+    return (`Number is even`)
+  }else 
+  return (`Number is odd`)
+}
+oddOrEven(n);
 
 // - Write an Arrow Function with curly brackets
+let oddOrEven=(n)=>
+  n%2==0 ? `Number is even`: `Number is odd`;
 
 // - Execute the function
+oddOrEven(n);
 
 // - Execute the function and store the return value in a variable
+let returnValue=oddOrEven(n);
 
 // - What is the typeof returnValue
+// "number"
