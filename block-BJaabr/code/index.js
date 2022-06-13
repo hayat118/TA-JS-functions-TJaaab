@@ -5,6 +5,10 @@ Write a function named convertToString that accepts a number and converts the nu
 
 Do the following for the given problem:
 */
+function convertToString(n){
+  return String(n);
+}
+convertToString();
 
 // - Write a Function Decleration
 function convertToString(n) {
@@ -41,18 +45,37 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
+function addOne(number){
+  return number+1;
+}
+addOne(number);
 
 // - Write a Function Expression
+let addOne= function(number){
+  return number+1;
+}
+addOne();
+
 
 // - Write an Arrow Function without curly brackets(if possible)
+let addOne=(number) =>  number+1;
 
 // - Write an Arrow Function with curly brackets
+let addOne=(number) => {
+  return number+1;
+
+}
+addOne();
+
 
 // - Execute the function
+addOne(12);
 
 // - Execute the function and store the return value in a variable.
+let returnValue=addOne(12);
 
 // - What is the typeof returnValue
+Number
 
 /* 2. Subtract one
 
@@ -62,18 +85,32 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
+function substractOne(number){
+  return number-1;
+}
+substractOne(number);
 
 // - Write a Function Expression
+let substractOne=function(number){
+  return number-1;
+}
 
 // - Write an Arrow Function without curly brackets(if possible)
+let substractOne=(number) =>number-1;
 
 // - Write an Arrow Function with curly brackets
+let substractOne=(number) =>{
+  return number-1;
+}
 
 // - Execute the function
+substractOne(number);
 
 // - Execute the function and store the return value in a variable.
+let returnValue=substractOne(number);
 
 // - What is the typeof returnValue
+Number;
 
 /* 3. Add two numbers
 
@@ -83,6 +120,12 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
+// let a=+prompt(`enter 1st number`);
+// let b=+prompt(`enter 2nd value`)
+function sum(a,b){
+  return a+b;
+}
+ sum(a,b);
 
 // - Write a Function Expression
 
